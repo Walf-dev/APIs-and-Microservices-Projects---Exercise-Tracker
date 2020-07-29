@@ -1,0 +1,30 @@
+{
+  "author": {
+    "name": "Wagni Fredoly",
+    "Github": "https://github.com/Walf-dev"
+  },
+  "name": "exercise-tracker",
+  "version": "0.0.1",
+  "description": "A REST API project for create a user and Add exercises by posting form data",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.26",
+    "mongodb": "^3.5.9",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "shortid": "^2.2.15"
+  },
+  "repository": {
+    "url": "https://gomix.com/#!/project/welcome-project"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "gomix",
+    "express"
+  ]
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wagni | Exercise Tracker</title>
+    <link
+      rel="shortcut icon"
+      href="https://avatars3.githubusercontent.com/u/61193321?s=460&u=7389af39e9b0236cb9ee8cdba6508afa90dcb9ff&v=4"
+      type="image/x-icon"
+      sizes="20x20"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <form action="/api/exercise/new-user" method="post" class="col-sm-6">
+          <div class="card" style="width:400px">
+            <img
+              class="card-img-top"
+              src="https://image.flaticon.com/icons/svg/609/609195.svg"
+              alt="user"
+            />
+            <div class="card-body">
+              <h3>Create a New User</h3>
+              <div class="form-group">
+                <input
+                  id="uname"
+                  type="text"
+                  name="username"
+                  placeholder="username"
+                  class="form-control"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </form>
+        <form action="/api/exercise/add" method="post" class="col-sm-6">
+          <div class="card" style="width:400px">
+            <img
+              class="card-img-top"
+              src="https://www.flaticon.com/premium-icon/icons/svg/2406/2406768.svg"
+              alt="user"
+              width="285"
+              height="285"
+            />
+            <div class="card-body">
+              <h3>Add exercises</h3>
+              <div class="form-group">
+                <input
+                  id="uid"
+                  type="text"
+                  name="userId"
+                  placeholder="User Id"
+                  class="form-control"
+                />
+                <input
+                  id="desc"
+                  type="text"
+                  name="description"
+                  placeholder="Description"
+                  class="form-control"
+                />
+                <input
+                  id="dur"
+                  type="text"
+                  name="duration"
+                  placeholder="Duration(min.)"
+                  class="form-control"
+                />
+                <input
+                  id="dur"
+                  type="text"
+                  name="date"
+                  placeholder="Date(yyyy-mm-dd)"
+                  class="form-control"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

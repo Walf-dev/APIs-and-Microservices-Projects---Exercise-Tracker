@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+  margin: auto;
+}
+
+form {
+  margin: auto;
+}
+input[type="submit"]:hover {
+  background-color: #FFFEC4;
+  cursor: pointer;
+}
+
+code {
+  font-family: monospace;
+  font-size: 1.2em;
+  background-color: #FFFEC4;
+  padding: 2px;
+}
